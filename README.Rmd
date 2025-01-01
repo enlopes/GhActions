@@ -1,0 +1,10 @@
+---
+output: github_document
+---
+
+Última atualização do nosso README foi em:
+```{r echo=FALSE}
+Sys.time()|>
+ format('%d/%m/%Y %H:%M')
+```
+
