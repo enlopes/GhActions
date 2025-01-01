@@ -31,9 +31,7 @@ jobs:
         with:
           packages: |
             any::rmarkdown
-      - name: Debug - List files
-        run: ls -al ..
-            
+
       - name: Render Rmarkdown files and Commit Results
         run: |
           Rscript -e 'rmarkdown::render("README.Rmd")'
