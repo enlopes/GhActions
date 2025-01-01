@@ -33,7 +33,7 @@ jobs:
             any::rmarkdown
       - name: Render Rmarkdown files and Commit Results
         run: |
-          Rscript -e 'source("README.Rmd")
+          Rscript -e 'source("~./README.Rmd")
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git commit -m "Hora atualizada" || echo "No changes to commit"
